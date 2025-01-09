@@ -16,7 +16,7 @@ load_dotenv()
 # Set up OpenAI API key
 openai.api_key = os.environ.get("OPENAI_API_KEY")
 
-NOTEBOOK_PATH = r'D:\G1_UserInterface\KEMP_Model\CRS_KG\KG.ipynb'
+NOTEBOOK_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'KG.ipynb'))
 
 class NotebookExecutor:
     def __init__(self, notebook_path):
