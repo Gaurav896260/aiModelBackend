@@ -9,7 +9,8 @@ from dotenv import load_dotenv
 app = Flask(__name__)
 
 # Allow CORS for specified origins
-CORS(app, resources={r"/api/*": {"origins": "http://localhost:3000"}})
+CORS(app, resources={r"/api/*": {"origins": "https://aimodel-frontend-seven.vercel.app/"}})
+
 
 load_dotenv()
 
